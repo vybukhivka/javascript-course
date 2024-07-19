@@ -153,3 +153,59 @@ var addArrow = (a, b) => {
 }
 addArrow(2, 5, 8)
 */
+
+// Primitives vs Objects
+
+/* let age = 60;
+let oldAge = age;
+age = 31;
+console.log(age);
+console.log(oldAge);
+
+const me = {
+	name: 'Bob',
+	age: 60,
+}
+const friend = me;
+friend.age = 27;
+
+// Practice
+
+console.log("friend: ", friend)
+console.log("me: ", me) */
+
+let lastName = 'Bob';
+let oldLastName = lastName;
+
+lastName = 'David';
+console.log(lastName, oldLastName)
+
+const bob = {
+	firstName: 'bob',
+	lastName: 'lol',
+	age: 27
+};
+
+const marriedBob = bob;
+marriedBob.lastName = 'lil'
+console.log("before marriage", bob)
+console.log("after marriage", marriedBob)
+
+// marriedBob = {};
+
+const bob2 = {
+	firstName: 'bob',
+	lastName: 'lol',
+	age: 27,
+	family: ['fob', 'gob']
+};
+
+const bobCopy = Object.assign({}, bob2);
+bobCopy.lastName = 'lil'
+
+bobCopy.family.push('job')
+bobCopy.family.push('dob')
+
+console.log("bob2:", bob2)
+console.log("copy", bobCopy)
+
