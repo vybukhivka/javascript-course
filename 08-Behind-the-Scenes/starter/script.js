@@ -110,4 +110,46 @@ lil.calcAge()
 const f = bob.calcAge
 f(); */
 
+// var firstName = 'dude'
 
+/* const bob = {
+	firstName: 'Bob',
+	year: 999,
+	calcAge: function() {
+		console.log(this)
+		console.log(2037 - this.year)
+
+	// Solution 1
+		// const self = this; // self or that (old solution)
+		// const isMillenian = function() {
+		// 	console.log(self.year >= 900 && self.year <= 2000)
+		// }
+
+	// Solution 2
+		const isMillenian = () => {
+			console.log(this)
+			console.log(this.year >= 900 && this.year <= 2000)
+		}
+		isMillenian()
+	},
+	greet: function() {
+		console.log(`Hey ${this.firstName}`)
+	} // this = window, therefore firstName is undefined, there is no firstName in window object
+}
+bob.greet()
+bob.calcAge()
+
+// arguments keyword
+const addExpr = function (a,b) {
+	console.log(arguments)
+	return a + b 
+}
+addExpr(2, 5)
+addExpr(2, 5, 7, 12)
+
+var addArrow = (a, b) => {
+	console.log(arguments)
+	return a + b;
+}
+addArrow(2, 5, 8)
+*/
