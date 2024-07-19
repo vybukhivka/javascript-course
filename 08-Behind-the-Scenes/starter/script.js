@@ -1,6 +1,6 @@
 'use strict'
 
-/* function calcAge(birthYear) {
+/* function t alcAge(birthYear) {
 	const age = 2037 - birthYear;
 
 	function printAge() {
@@ -36,7 +36,7 @@ calcAge(999);
 // console.log(age);
 // printAge(); */
 
- console.log(me)
+ /* console.log(me)
  // console.log(job)
  // console.log(year)
 
@@ -76,6 +76,38 @@ const z = 3
 
 console.log(x === window.x)
 console.log(y === window.y)
-console.log(z === window.z)
+console.log(z === window.z) */
+
+/* // console.log(this)
+
+const calcAge = function(year) {
+	console.log(2037 - year)
+	console.log(this); // undefined
+}
+// calcAge(999)
+
+const calcAgeArrow = (year) => {
+	console.log(2037 - year)
+	console.log(this); // window, because window is the parrent
+}
+// calcAgeArrow(1222)
+
+const bob = {
+	year: 999,
+	calcAge: function() {
+	console.log(this)
+	console.log(2037 - this.year)
+	}
+}
+// bob.calcAge();
+
+const lil = {
+	year: 2017
+}
+lil.calcAge = bob.calcAge
+lil.calcAge()
+
+const f = bob.calcAge
+f(); */
 
 
