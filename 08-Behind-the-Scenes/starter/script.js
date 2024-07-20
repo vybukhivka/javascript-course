@@ -174,7 +174,7 @@ friend.age = 27;
 console.log("friend: ", friend)
 console.log("me: ", me) */
 
-let lastName = 'Bob';
+/* let lastName = 'Bob';
 let oldLastName = lastName;
 
 lastName = 'David';
@@ -207,5 +207,5 @@ bobCopy.family.push('job')
 bobCopy.family.push('dob')
 
 console.log("bob2:", bob2)
-console.log("copy", bobCopy)
+console.log("copy", bobCopy) */
 
