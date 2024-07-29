@@ -1,6 +1,78 @@
+// Challenge 4
+
+/* THIS TEST DATA (pasted to textarea)
+underscore_case
+ first_name
+Some_Variable 
+  calculate_AGE
+delayed_departure
+
+SHOULD PRODUCE THIS OUTPUT (5 separate console.log outputs)
+underscoreCase      ✅
+firstName           ✅✅
+someVariable        ✅✅✅
+calculateAge        ✅✅✅✅
+delayedDeparture    ✅✅✅✅✅ */
+
+/* document.body.append(document.createElement('textarea'));
+document.body.append(document.createElement('button'));
+
+const toCamelCase = function(str) {
+  const lowerStr = str.toLowerCase()
+  const words = lowerStr.split('\n')
+  
+  // build array with camel cased strings
+  for (const [i, w] of words.entries()) {
+    const [firstWord, secondWord] = w.trim().split('_');
+    const output = `${firstWord}${secondWord.replace(
+      secondWord[0],
+      secondWord[0].toUpperCase()
+    )}`
+    console.log(output.padEnd(20, ' ') + '✅'.repeat(i + 1))
+  }
+}
+
+document.body
+  .querySelector('button')
+  .addEventListener('click',
+    () => toCamelCase(document.querySelector('textarea').value)) */
+
+// Challenge 3
+
+/* const gameEvents = new Map([
+  [17, '⚽️ GOAL'],
+  [36, '🔁 Substitution'],
+  [47, '⚽️ GOAL'],
+  [61, '🔁 Substitution'],
+  [64, '🔶 Yellow card'],
+  [69, '🔴 Red card'],
+  [70, '🔁 Substitution'],
+  [72, '🔁 Substitution'],
+  [76, '⚽️ GOAL'],
+  [80, '⚽️ GOAL'],
+  [92, '🔶 Yellow card'],
+]);
+
+// 1
+const events = [...new Set(gameEvents.values())];
+console.log(events)
+
+// 2
+gameEvents.delete(64)
+console.log(gameEvents)
+
+// 3
+const average = [...gameEvents.keys()].pop() / gameEvents.size;
+console.log(average)
+
+for(const [time, event] of gameEvents) {
+  const half = time <= 45 ? '[FIRST HALF]' : '[SECOND HALF]'
+  console.log(`${half} ${time}: ${event}`)
+} */
+
 // Challenge 2
 
-const game = {
+/* const game = {
   team1: 'Bayern Munich',
   team2: 'Borrussia Dortmund',
   players: [
@@ -38,9 +110,7 @@ const game = {
     x: 3.25,
     team2: 6.5,
   },
-};
-
-// Challenge 2
+}; */
 
 /* // 1
 for (const [i, name] of Object.entries(game.scored)) {
@@ -405,4 +475,4 @@ for (let i = 0; i < books.length; i++) {
 // 7.2
 for (let i = 0; i < books.length; i++) {
   books[i].highlighted &&= !(books[i].thirdParty.goodreads.rating < 4.2)
-} */
+*/
